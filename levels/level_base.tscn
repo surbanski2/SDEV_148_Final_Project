@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://b25yviq10wfyj"]
+
+[ext_resource type="Script" uid="uid://c7a4nb4lqf6q" path="res://levels/level_base.gd" id="1_da5si"]
+[ext_resource type="PackedScene" uid="uid://du5ghmqcv7ofd" path="res://hud.tscn" id="1_hk6b7"]
+[ext_resource type="PackedScene" uid="uid://blyk5x4dib6p4" path="res://player/player.tscn" id="1_nmr65"]
+[ext_resource type="Texture2D" uid="uid://ci4yltyxfpoyw" path="res://assets/D3DBB408-982B-4BE5-AA67-3CC039955A4B.png" id="2_ep22m"]
+[ext_resource type="Texture2D" uid="uid://cgoa56dfup4lg" path="res://assets/DCBC8889-C47F-4560-8A5B-EE2D103056EA.png" id="3_ts4ud"]
+
+[node name="LevelBase" type="Node2D"]
+script = ExtResource("1_da5si")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.2, 1)
+motion_mirroring = Vector2(6048, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource("2_ep22m")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.2, 1)
+motion_mirroring = Vector2(6048, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture = ExtResource("3_ts4ud")
+centered = false
+
+[node name="SpawnPoint" type="Marker2D" parent="."]
+position = Vector2(995, 210)
+
+[node name="Player" parent="." instance=ExtResource("1_nmr65")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HUD" parent="CanvasLayer" instance=ExtResource("1_hk6b7")]
+
+[node name="GameTimer" type="Timer" parent="."]
+
+[connection signal="died" from="Player" to="." method="game_over"]
+[connection signal="life_changed" from="Player" to="CanvasLayer/HUD" method="update_lives"]
+[connection signal="test" from="Player" to="." method="reset_timer"]
+[connection signal="timeout" from="GameTimer" to="." method="_on_game_timer_timeout"]

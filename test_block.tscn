@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b40ipfwjkedf0"]
+
+[ext_resource type="Texture2D" uid="uid://dnlvk1fs4j5ru" path="res://assets/rock.png" id="1_qr08y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7oohr"]
+size = Vector2(512, 512)
+
+[node name="StaticBody2D" type="StaticBody2D" groups=["ground"]]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(256, -256)
+shape = SubResource("RectangleShape2D_7oohr")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+texture = ExtResource("1_qr08y")
+texture_scale = Vector2(0, 0)
+polygon = PackedVector2Array(0, 0, 512, 0, 512, -512, 0, -512)
+uv = PackedVector2Array(0, 0, 512, 0, 512, -512, 0, -512)

@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4sc85eidsrtc"]
+
+[ext_resource type="Texture2D" uid="uid://dnlvk1fs4j5ru" path="res://assets/rock.png" id="1_ohm54"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+collision_layer = 4
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(0, 0, 512, 0, 0, -256)
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+texture = ExtResource("1_ohm54")
+texture_scale = Vector2(0, 0)
+polygon = PackedVector2Array(0, 0, 512, 0, 0, -256)

@@ -1,0 +1,84 @@
+[gd_scene load_steps=5 format=3 uid="uid://nd7xc5v1oxq3"]
+
+[ext_resource type="Texture2D" uid="uid://ci4yltyxfpoyw" path="res://assets/D3DBB408-982B-4BE5-AA67-3CC039955A4B.png" id="1_ak2if"]
+[ext_resource type="Script" uid="uid://dxql037cy0vqu" path="res://title_screen.gd" id="1_ig5kc"]
+[ext_resource type="Texture2D" uid="uid://cgoa56dfup4lg" path="res://assets/DCBC8889-C47F-4560-8A5B-EE2D103056EA.png" id="2_ig5kc"]
+
+[sub_resource type="SystemFont" id="SystemFont_05l2w"]
+font_names = PackedStringArray("Impact")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ig5kc")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ak2if")
+expand_mode = 2
+stretch_mode = 6
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ig5kc")
+expand_mode = 2
+stretch_mode = 6
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -56.0
+offset_top = -11.5
+offset_right = 56.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("SystemFont_05l2w")
+theme_override_font_sizes/font_size = 96
+text = "DESERT RACER"
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -31.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 80
+theme_override_constants/margin_right = 80
+theme_override_constants/margin_bottom = 40
+
+[node name="StartButton" type="Button" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+theme_override_font_sizes/font_size = 48
+text = "PLAY"
+
+[node name="QuitButton" type="Button" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_font_sizes/font_size = 48
+text = "QUIT"
+
+[connection signal="pressed" from="MarginContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="MarginContainer/QuitButton" to="." method="_on_quit_button_pressed"]

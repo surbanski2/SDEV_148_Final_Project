@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://du5ghmqcv7ofd"]
+
+[ext_resource type="Script" uid="uid://cqjciwgrsfb3b" path="res://hud.gd" id="1_37p78"]
+
+[sub_resource type="SystemFont" id="SystemFont_64ctp"]
+font_names = PackedStringArray("Impact")
+subpixel_positioning = 0
+
+[sub_resource type="SystemFont" id="SystemFont_37p78"]
+font_names = PackedStringArray("Impact")
+subpixel_positioning = 0
+
+[sub_resource type="SystemFont" id="SystemFont_n2snw"]
+font_names = PackedStringArray("Impact")
+subpixel_positioning = 0
+
+[node name="HUD" type="MarginContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 20
+script = ExtResource("1_37p78")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="LivesCount" type="Label" parent="HBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_64ctp")
+theme_override_font_sizes/font_size = 60
+text = "3"
+
+[node name="RemainingTime" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_fonts/font = SubResource("SystemFont_37p78")
+theme_override_font_sizes/font_size = 60
+text = "Time:"
+horizontal_alignment = 1
+
+[node name="Score" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_n2snw")
+theme_override_font_sizes/font_size = 60
+text = "Score: 0"
+horizontal_alignment = 2

@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://bnbsknpvnhdac"]
+
+[ext_resource type="Script" uid="uid://c75pc5yfyoa8b" path="res://collectibles/skull.gd" id="1_b017c"]
+[ext_resource type="Texture2D" uid="uid://bru1kwoipoy2r" path="res://assets/skull.png" id="1_ur630"]
+[ext_resource type="AudioStream" uid="uid://cbg3c2lfip3d0" path="res://assets/badSound.wav" id="3_7fyqs"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nn7b5"]
+radius = 36.0
+
+[node name="Skull" type="Area2D" groups=["skulls"]]
+collision_layer = 2
+script = ExtResource("1_b017c")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ur630")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_nn7b5")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_7fyqs")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

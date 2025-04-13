@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwqisvapeueem"]
+
+[sub_resource type="Gradient" id="Gradient_seble"]
+offsets = PackedFloat32Array(0.46831, 1)
+colors = PackedColorArray(0.479834, 0.479834, 0.479834, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_qi1wl"]
+gradient = SubResource("Gradient_seble")
+
+[node name="Area2D" type="Area2D" groups=["hazards"]]
+collision_layer = 4
+metadata/_edit_group_ = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(0, 0, 256, 0, 256, -512, 240, -504, 224, -512, 208, -504, 192, -512, 176, -504, 160, -512, 144, -504, 128, -512, 112, -504, 96, -512, 80, -504, 64, -512, 48, -504, 32, -512, 16, -504, 0, -512)
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(0.137255, 0.470588, 1, 1)
+texture = SubResource("GradientTexture1D_qi1wl")
+texture_rotation = 1.5708
+polygon = PackedVector2Array(0, 0, 256, 0, 256, -512, 240, -504, 224, -512, 208, -504, 192, -512, 176, -504, 160, -512, 144, -504, 128, -512, 112, -504, 96, -512, 80, -504, 64, -512, 48, -504, 32, -512, 16, -504, 0, -512)
