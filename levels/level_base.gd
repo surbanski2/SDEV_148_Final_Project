@@ -1,7 +1,7 @@
 extends Node2D
 
 var score = 0
-var time_left = 30
+var time_left = 60
 
 func _ready():
 	$Player.spawn_position = $SpawnPoint.global_position
@@ -40,9 +40,11 @@ func _on_skull_collected():
 
 func reset_timer():
 	print("I'm resetting the time!")
-	time_left = 30
+	time_left = 60
 	$CanvasLayer/HUD.update_timer(time_left)
 	
 func _process(delta):
-	print("The score is " + str(score))
+	if $Player.position.x > 12000:
+		GameState.next_level()
+
 	

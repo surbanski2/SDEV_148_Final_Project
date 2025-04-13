@@ -29,8 +29,10 @@ func _physics_process(delta):
 	if overlapping_bodies.size() != 0:
 		if Input.is_action_pressed("forwards"):
 			apply_force(Vector2(1000,0),Vector2.ZERO)
+			apply_torque(200)
 		if Input.is_action_pressed("backwards"):
 			apply_force(Vector2(-1000,0), Vector2.ZERO)
+			apply_torque(-200)
 		if Input.is_action_pressed("jump"):
 			apply_force(Vector2(0,-25000), Vector2.ZERO)
 	print(overlapping_bodies)
