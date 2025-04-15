@@ -12,10 +12,10 @@
 [node name="Level01" instance=ExtResource("1_2owmk")]
 
 [node name="Star" parent="." index="4" instance=ExtResource("2_cwmx8")]
-position = Vector2(704, 3360)
+position = Vector2(448, 3392)
 
 [node name="Star3" parent="." index="5" instance=ExtResource("2_cwmx8")]
-position = Vector2(1760, 3328)
+position = Vector2(1592, 3736)
 
 [node name="Star5" parent="." index="6" instance=ExtResource("2_cwmx8")]
 position = Vector2(2624, 3416)
@@ -27,19 +27,19 @@ position = Vector2(3520, 3224)
 position = Vector2(3904, 3224)
 
 [node name="Star8" parent="." index="9" instance=ExtResource("2_cwmx8")]
-position = Vector2(4832, 3064)
+position = Vector2(4672, 3424)
 
 [node name="Star9" parent="." index="10" instance=ExtResource("2_cwmx8")]
-position = Vector2(4712, 3064)
+position = Vector2(4320, 3440)
 
 [node name="Star10" parent="." index="11" instance=ExtResource("2_cwmx8")]
 position = Vector2(5648, 2928)
 
 [node name="Star4" parent="." index="12" instance=ExtResource("2_cwmx8")]
-position = Vector2(1152, 3136)
+position = Vector2(1408, 3392)
 
 [node name="Star2" parent="." index="13" instance=ExtResource("2_cwmx8")]
-position = Vector2(1504, 3232)
+position = Vector2(1984, 3520)
 
 [node name="StaticBody2D" parent="." index="15" instance=ExtResource("3_05651")]
 position = Vector2(0, 4032)
@@ -62,116 +62,198 @@ position = Vector2(8960, 3264)
 [node name="StaticBody2D4" parent="." index="21" instance=ExtResource("3_05651")]
 position = Vector2(512, 4032)
 
-[node name="StaticBody2D5" parent="." index="22" instance=ExtResource("3_05651")]
+[node name="StaticBody2D40" parent="." index="22" instance=ExtResource("3_05651")]
+position = Vector2(1024, 4288)
+
+[node name="StaticBody2D41" parent="." index="23" instance=ExtResource("3_05651")]
+position = Vector2(1536, 4352)
+
+[node name="StaticBody2D5" parent="." index="24" instance=ExtResource("3_05651")]
 position = Vector2(2048, 4032)
 
-[node name="StaticBody2D6" parent="." index="23" instance=ExtResource("4_xxuo2")]
+[node name="StaticBody2D6" parent="." index="25" instance=ExtResource("4_xxuo2")]
 position = Vector2(1536, 3840)
 
-[node name="StaticBody2D19" parent="." index="24" instance=ExtResource("4_xxuo2")]
+[node name="StaticBody2D19" parent="." index="26" instance=ExtResource("4_xxuo2")]
 position = Vector2(6144, 3520)
 
-[node name="StaticBody2D7" parent="." index="25" instance=ExtResource("3_05651")]
+[node name="StaticBody2D7" parent="." index="27" instance=ExtResource("3_05651")]
 position = Vector2(2560, 4032)
 
-[node name="StaticBody2D8" parent="." index="26" instance=ExtResource("3_05651")]
+[node name="StaticBody2D22" parent="." index="28" instance=ExtResource("3_05651")]
+position = Vector2(3072, 4032)
+
+[node name="StaticBody2D23" parent="." index="29" instance=ExtResource("3_05651")]
+position = Vector2(3840, 4032)
+
+[node name="StaticBody2D24" parent="." index="30" instance=ExtResource("3_05651")]
+position = Vector2(4608, 4032)
+
+[node name="StaticBody2D25" parent="." index="31" instance=ExtResource("3_05651")]
+position = Vector2(5120, 4288)
+
+[node name="StaticBody2D26" parent="." index="32" instance=ExtResource("3_05651")]
+position = Vector2(5632, 4032)
+
+[node name="StaticBody2D27" parent="." index="33" instance=ExtResource("3_05651")]
+position = Vector2(6144, 4032)
+
+[node name="StaticBody2D8" parent="." index="34" instance=ExtResource("3_05651")]
 position = Vector2(11008, 3776)
 
-[node name="StaticBody2D9" parent="." index="27" instance=ExtResource("3_05651")]
+[node name="StaticBody2D9" parent="." index="35" instance=ExtResource("3_05651")]
 position = Vector2(5120, 3776)
 
-[node name="StaticBody2D13" parent="." index="28" instance=ExtResource("3_05651")]
+[node name="StaticBody2D13" parent="." index="36" instance=ExtResource("3_05651")]
 position = Vector2(6912, 3776)
 
-[node name="StaticBody2D14" parent="." index="29" instance=ExtResource("3_05651")]
+[node name="StaticBody2D28" parent="." index="37" instance=ExtResource("3_05651")]
+position = Vector2(6912, 4288)
+
+[node name="StaticBody2D29" parent="." index="38" instance=ExtResource("3_05651")]
+position = Vector2(7424, 4288)
+
+[node name="StaticBody2D30" parent="." index="39" instance=ExtResource("3_05651")]
+position = Vector2(7936, 4288)
+
+[node name="StaticBody2D31" parent="." index="40" instance=ExtResource("3_05651")]
+position = Vector2(8448, 3776)
+
+[node name="StaticBody2D39" parent="." index="41" instance=ExtResource("3_05651")]
+position = Vector2(8448, 4288)
+
+[node name="StaticBody2D32" parent="." index="42" instance=ExtResource("3_05651")]
+position = Vector2(8960, 3776)
+
+[node name="StaticBody2D42" parent="." index="43" instance=ExtResource("3_05651")]
+position = Vector2(8960, 4288)
+
+[node name="StaticBody2D14" parent="." index="44" instance=ExtResource("3_05651")]
 position = Vector2(7424, 3776)
 
-[node name="StaticBody2D15" parent="." index="30" instance=ExtResource("3_05651")]
+[node name="StaticBody2D15" parent="." index="45" instance=ExtResource("3_05651")]
 position = Vector2(7936, 3776)
 
-[node name="StaticBody2D17" parent="." index="31" instance=ExtResource("3_05651")]
+[node name="StaticBody2D17" parent="." index="46" instance=ExtResource("3_05651")]
 position = Vector2(10496, 3776)
 
-[node name="StaticBody2D18" parent="." index="32" instance=ExtResource("3_05651")]
+[node name="StaticBody2D33" parent="." index="47" instance=ExtResource("3_05651")]
+position = Vector2(10496, 4288)
+
+[node name="StaticBody2D34" parent="." index="48" instance=ExtResource("3_05651")]
+position = Vector2(11008, 4288)
+
+[node name="StaticBody2D35" parent="." index="49" instance=ExtResource("3_05651")]
+position = Vector2(11520, 3776)
+
+[node name="StaticBody2D37" parent="." index="50" instance=ExtResource("3_05651")]
+position = Vector2(12032, 3520)
+
+[node name="StaticBody2D38" parent="." index="51" instance=ExtResource("3_05651")]
+position = Vector2(12032, 4032)
+
+[node name="StaticBody2D36" parent="." index="52" instance=ExtResource("3_05651")]
+position = Vector2(11520, 4288)
+
+[node name="StaticBody2D18" parent="." index="53" instance=ExtResource("3_05651")]
 position = Vector2(9472, 3776)
 
-[node name="StaticBody2D12" parent="." index="33" instance=ExtResource("6_4c076")]
+[node name="StaticBody2D43" parent="." index="54" instance=ExtResource("3_05651")]
+position = Vector2(9472, 4288)
+
+[node name="StaticBody2D12" parent="." index="55" instance=ExtResource("6_4c076")]
 position = Vector2(3072, 3520)
 
-[node name="StaticBody2D20" parent="." index="34" instance=ExtResource("6_4c076")]
+[node name="StaticBody2D20" parent="." index="56" instance=ExtResource("6_4c076")]
 position = Vector2(8448, 3264)
 
-[node name="StaticBody2D16" parent="." index="35" instance=ExtResource("6_4c076")]
+[node name="StaticBody2D16" parent="." index="57" instance=ExtResource("6_4c076")]
 position = Vector2(4608, 3520)
 
-[node name="Area2D" parent="." index="36" instance=ExtResource("7_pdr83")]
+[node name="Area2D" parent="." index="58" instance=ExtResource("7_pdr83")]
 position = Vector2(3584, 3776)
 
-[node name="Area2D2" parent="." index="37" instance=ExtResource("7_pdr83")]
+[node name="Area2D6" parent="." index="59" instance=ExtResource("7_pdr83")]
+position = Vector2(3840, 3776)
+rotation = 3.14159
+
+[node name="Area2D7" parent="." index="60" instance=ExtResource("7_pdr83")]
+position = Vector2(6912, 3776)
+rotation = 3.14159
+
+[node name="Area2D8" parent="." index="61" instance=ExtResource("7_pdr83")]
+position = Vector2(10240, 3776)
+rotation = 3.14159
+
+[node name="Area2D9" parent="." index="62" instance=ExtResource("7_pdr83")]
+position = Vector2(10496, 3776)
+rotation = 3.14159
+
+[node name="Area2D2" parent="." index="63" instance=ExtResource("7_pdr83")]
 position = Vector2(4352, 4032)
 
-[node name="Area2D3" parent="." index="38" instance=ExtResource("7_pdr83")]
+[node name="Area2D3" parent="." index="64" instance=ExtResource("7_pdr83")]
 position = Vector2(6656, 3776)
 
-[node name="Area2D4" parent="." index="39" instance=ExtResource("7_pdr83")]
+[node name="Area2D4" parent="." index="65" instance=ExtResource("7_pdr83")]
 position = Vector2(10240, 3776)
 
-[node name="Area2D5" parent="." index="40" instance=ExtResource("7_pdr83")]
+[node name="Area2D5" parent="." index="66" instance=ExtResource("7_pdr83")]
 position = Vector2(9984, 3776)
 
-[node name="Skull" parent="." index="41" instance=ExtResource("8_ddsyl")]
+[node name="Skull" parent="." index="67" instance=ExtResource("8_ddsyl")]
 position = Vector2(2080, 3480)
 
-[node name="Skull2" parent="." index="42" instance=ExtResource("8_ddsyl")]
-position = Vector2(2880, 3288)
+[node name="Skull2" parent="." index="68" instance=ExtResource("8_ddsyl")]
+position = Vector2(3712, 3136)
 
-[node name="Skull3" parent="." index="43" instance=ExtResource("8_ddsyl")]
-position = Vector2(4936, 3064)
+[node name="Skull3" parent="." index="69" instance=ExtResource("8_ddsyl")]
+position = Vector2(6080, 3416)
 
-[node name="Skull4" parent="." index="44" instance=ExtResource("8_ddsyl")]
-position = Vector2(5288, 3048)
+[node name="Skull4" parent="." index="70" instance=ExtResource("8_ddsyl")]
+position = Vector2(5568, 3192)
 
-[node name="Skull5" parent="." index="45" instance=ExtResource("8_ddsyl")]
-position = Vector2(6848, 3120)
+[node name="Skull5" parent="." index="71" instance=ExtResource("8_ddsyl")]
+position = Vector2(6784, 3072)
 
-[node name="Star11" parent="." index="46" instance=ExtResource("2_cwmx8")]
-position = Vector2(7024, 3024)
+[node name="Star11" parent="." index="72" instance=ExtResource("2_cwmx8")]
+position = Vector2(7032, 3008)
 
-[node name="Skull6" parent="." index="47" instance=ExtResource("8_ddsyl")]
-position = Vector2(7432, 2832)
+[node name="Skull6" parent="." index="73" instance=ExtResource("8_ddsyl")]
+position = Vector2(7424, 3184)
 
-[node name="Star12" parent="." index="48" instance=ExtResource("2_cwmx8")]
-position = Vector2(7592, 2720)
+[node name="Star12" parent="." index="74" instance=ExtResource("2_cwmx8")]
+position = Vector2(7744, 3192)
 
-[node name="Skull7" parent="." index="49" instance=ExtResource("8_ddsyl")]
-position = Vector2(7752, 2680)
+[node name="Skull7" parent="." index="75" instance=ExtResource("8_ddsyl")]
+position = Vector2(8416, 3200)
 
-[node name="Skull8" parent="." index="50" instance=ExtResource("8_ddsyl")]
+[node name="Skull8" parent="." index="76" instance=ExtResource("8_ddsyl")]
 position = Vector2(10032, 3152)
 
-[node name="Star13" parent="." index="51" instance=ExtResource("2_cwmx8")]
+[node name="Star13" parent="." index="77" instance=ExtResource("2_cwmx8")]
 position = Vector2(10304, 3024)
 
-[node name="Star14" parent="." index="52" instance=ExtResource("2_cwmx8")]
-position = Vector2(9920, 3216)
+[node name="Star14" parent="." index="78" instance=ExtResource("2_cwmx8")]
+position = Vector2(9480, 3192)
 
-[node name="Skull9" parent="." index="53" instance=ExtResource("8_ddsyl")]
+[node name="Skull9" parent="." index="79" instance=ExtResource("8_ddsyl")]
 position = Vector2(9088, 2760)
 
-[node name="Skull10" parent="." index="54" instance=ExtResource("8_ddsyl")]
-position = Vector2(8888, 2880)
+[node name="Skull10" parent="." index="80" instance=ExtResource("8_ddsyl")]
+position = Vector2(8832, 2816)
 
-[node name="Star15" parent="." index="55" instance=ExtResource("2_cwmx8")]
-position = Vector2(8968, 2800)
+[node name="Star15" parent="." index="81" instance=ExtResource("2_cwmx8")]
+position = Vector2(8960, 2816)
 
-[node name="Star16" parent="." index="56" instance=ExtResource("2_cwmx8")]
-position = Vector2(11072, 2616)
+[node name="Star16" parent="." index="82" instance=ExtResource("2_cwmx8")]
+position = Vector2(11584, 3136)
 
-[node name="Star17" parent="." index="57" instance=ExtResource("2_cwmx8")]
-position = Vector2(11456, 2624)
+[node name="Star17" parent="." index="83" instance=ExtResource("2_cwmx8")]
+position = Vector2(11848, 3016)
 
-[node name="Skull11" parent="." index="58" instance=ExtResource("8_ddsyl")]
-position = Vector2(11256, 2616)
+[node name="Skull11" parent="." index="84" instance=ExtResource("8_ddsyl")]
+position = Vector2(11392, 3200)
 
-[node name="Star18" parent="." index="59" instance=ExtResource("2_cwmx8")]
-position = Vector2(6144, 3712)
+[node name="Star18" parent="." index="85" instance=ExtResource("2_cwmx8")]
+position = Vector2(6592, 3208)
