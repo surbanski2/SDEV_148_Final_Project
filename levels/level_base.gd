@@ -16,7 +16,7 @@ func _ready():
 	
 	
 func game_over():
-	GameState.restart()
+	GameState.game_over()
 
 
 func _on_game_timer_timeout():
